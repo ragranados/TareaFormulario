@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
 </head>
+
 <body>
     <form action="pagina.html" method="post">
         <fieldset>
@@ -13,10 +15,10 @@
             <fieldset>
                 <legend>Categoria personal</legend>
 
-                <label for="name" >Nombre: </label>
-                <input type="text" name="name" id="name">
-                
-                <label for="birthday">Fecha de nacimiento</label>
+                <label for="name">Nombre: </label >
+                <input type="text" name="name" id="name" required>
+
+                <label for="birthday">Fecha de nacimiento</label required>
                 <input type="date" name="birthday" id="birthday">
 
                 <label for="favanimal">Animal Favorito: </label>
@@ -28,17 +30,43 @@
 
             <fieldset>
                 <legend>Cuenta</legend>
-                
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="you@example.com">
+
+                <label for="email"></label >
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
 
                 <label for="password">Contrasenia: </label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
 
-                <label for="vpassword">Verify password: </label>
+                <label for="vpassword">Verify password: </label required>
                 <input type="text">
+
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <label for="adresse">Direccion: </label>
+                <input type="text" name="adresse" id="adresse">
+
+                <label for="city">Ciudad: </label>
+                <input type="text" name="city" id="city" >
+
+                <label for="country">Pais: </label>
+                <input type="text" name="country" id="country" >
+
+                <label for="telefono">Numero de telefono: </label>
+                <input type="text" name="telefono" id="telefono" pattern="[0-9]{8}">
             </fieldset>
         </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+
     </form>
 </body>
+
 </html>
